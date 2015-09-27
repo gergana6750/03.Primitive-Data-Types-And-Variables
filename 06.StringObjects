@@ -1,0 +1,14 @@
+using System;
+
+    class StringObjects
+    {
+        static void Main(string[] args)
+        {
+            string greeting = "Hello";
+            string word = "world";
+            object concatenate = greeting + " " + word;
+            string newConatenate = (string)concatenate;
+
+            Console.WriteLine("{0}!", newConatenate);
+        }
+    }
