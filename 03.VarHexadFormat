@@ -1,0 +1,12 @@
+using System;
+
+
+class VarHexadFormat
+    {
+        static void Main(string[] args)
+        {
+            int numberInHexa = 0xFE;
+            Console.WriteLine(numberInHexa);
+
+        }
+    }
