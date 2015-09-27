@@ -1,0 +1,32 @@
+using System;
+using System.Linq;
+using System.Text;
+
+
+
+    class IsoselesTriange
+    {
+        static void Main(string[] args)
+        {
+           // Console.OutputEncoding = Encoding.UTF8;
+           // Console.WriteLine("\u00A9");
+            int n = int.Parse(Console.ReadLine());
+            char symbol = 'c';
+
+            int innerSpace = 1;
+            int outerSpace = n - 2;
+            Console.WriteLine(new string(' ', n-1) + symbol + new string (' ', n-1));
+
+            for (int i = 0; i < n - 2; i++)
+            {
+                string outerString = new string(' ', outerSpace);
+                string innerString = new string(' ', innerSpace);
+                Console.WriteLine(outerString + symbol +  innerString + symbol + outerString);
+                outerSpace--;
+                innerSpace+=2;
+            }
+                Console.WriteLine(string.Concat(Enumerable.Repeat(symbol + " ", n)));
+
+            
+        }
+    }
